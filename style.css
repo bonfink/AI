@@ -1,33 +1,53 @@
 :root {
     --cor-fundo: #01080E;
-    --cor-principal: #112233;
-    --cor-secundaria: #212333;
-    --cor-destaque: #7db8e7;
-    --cor-texto: #D7F9FF;
+    --cor-principal: #51519b25;
+    --cor-secundaria: #1f07498d;
+    --cor-destaque: #686ab0;
+    --cor-texto: #eae5fd;
+    --cor-borda: #21236b;
   }
   
-
 body {
-    background-color: var(--cor-fundo);
+  background: linear-gradient(45deg , #03030f 40%, #222578);
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+  
 
   }
 
-
    .caixa-principal{
+    border: 1px solid var(--cor-borda); 
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    
   }
   
   h1{
     color: var(--cor-destaque);
+ 
    }
+
+   button {
+
+    background-color: var(--cor-borda);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-destaque);
+    border-radius: 5px;
+    margin: 015px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+button:hover{
+  border: 1px solid var(--cor-texto);
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
    
-  
+}
