@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 :root {
     --cor-fundo: #01080E;
     --cor-principal: #51519b25;
@@ -10,6 +11,7 @@
 body {
   background: linear-gradient(45deg , #03030f 40%, #222578);
     color: var(--cor-texto);
+    font-family: "Pixelify Sans", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +34,9 @@ body {
     color: var(--cor-destaque);
  
    }
+   h1, caixa-perguntas, .caixa-resultado{
+    font-family: "Pixelify Sans", sans-serif;
+   }
 
    button {
 
@@ -50,4 +55,17 @@ button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-fundo);
    
+}
+
+.caixa-alternativas{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.caixa-resultado{
+        display:none;  
+
+}
+.caixa-resultado.mostrar{
+  display: block;
 }
